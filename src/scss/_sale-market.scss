@@ -1,0 +1,193 @@
+.sale-market {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__box {
+    &.box {
+      border-radius: 0;
+      input[type="submit"] {
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: bold;
+        background: #00bb44;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 22px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  z-index: 5;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #3d3d3d, #000);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+  }
+  & > i, .svg-inline--fa {
+    position: relative;
+    z-index: 4;
+    transition: 0.2s;
+  }
+  &:hover {
+    &:before {
+      transform: scale(0);
+    }
+    & i, .svg-inline--fa {
+      //background: linear-gradient(45deg, #3d3d3d, #000);
+      //background: #000;
+      color: #000;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scale(2.2);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sale-market__wrap {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1085px) {
+  .sale-market {
+
+    .sale-market__box {
+      width: 350px;
+    }
+    &__wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image {
+      width: 50%;
+      margin-right: 5px;
+    }
+
+    &__social {
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.sale-market {
+    padding-bottom: 0;
+  }
+  .sale-market {
+    .container {
+      width: 100%;
+    }
+    h2 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 32px;
+    }
+
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+      .wrapper {
+        width: 100%;
+        background: rgba(0,0,0,.8);
+      }
+    }
+
+    &__image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 90%;
+    }
+
+    &__box {
+      &.box {
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        .sale-market__form {
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__social {
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .sale-market {
+    .container {
+      width: 100%;
+    }
+    h2 {
+    }
+
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+      .wrapper {
+        width: 100%;
+        background: rgba(0,0,0,.8);
+      }
+    }
+
+    &__image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &__box {
+      &.box {
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        .sale-market__form {
+          width: 90%;
+          margin: 0 auto;
+        }
+        h2 {
+          padding: 20px 0;
+        }
+      }
+    }
+
+    &__social {
+      padding-bottom: 20px;
+    }
+  }
+}

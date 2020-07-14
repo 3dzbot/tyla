@@ -1,0 +1,46 @@
+.maps {
+  h2 {
+  }
+  .google-map {
+    overflow:hidden;
+    width: 100%;
+    position: relative;
+    iframe {
+      max-height: 620px;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .maps {
+    h2 {
+    }
+    .google-map {
+      iframe {
+        max-height: 480px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .maps {
+    h2 {
+    }
+    .google-map {
+      iframe {
+        max-height: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 1085px) {
+  .maps {
+    //padding-bottom: 40px;
+    h2 {
+    }
+    .google-map {
+      iframe {
+      }
+    }
+  }
+}

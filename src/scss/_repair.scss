@@ -1,0 +1,79 @@
+.repair {
+  &__tabs {
+    .tabs__header {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+
+      }
+    }
+  }
+.tab-h {
+  text-align: center;
+  width: 33.3333%;
+  padding: 5px 15px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+  font-size: 36px;
+  transition: .4s;
+  &:hover {
+    border-color: #00bb44;
+    text-shadow: 0 0 5px rgba(0, 187, 68, 1);
+  }
+  &-active {
+    border-color: #00bb44;
+    text-shadow: 0 0 5px rgba(0, 187, 68, 1);
+  }
+}
+.tab-b {
+  display: none;
+}
+.tab-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  img {
+    width: 49%;
+    height: auto;
+    max-height: 360px;
+    max-width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-h {
+    font-size: 18px;
+    width: 100%;
+  }
+  .tab-flex  {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      width: 49%;
+      max-height: 360px;
+      max-width: 100%;
+      margin-bottom: 2%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .tab-flex  {
+    justify-content: center;
+    img {
+      width: 95%;
+      max-height: 360px;
+      max-width: 100%;
+      margin-bottom: 2%;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .tab-h {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,16 @@
+.plans {
+  position: relative;
+  h2 {
+  }
+  .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-pagination-bullet-active {
+  background: #00bb44;
+}
